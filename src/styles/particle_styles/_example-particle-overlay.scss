@@ -1,0 +1,17 @@
+.example-particle-overlay {
+    width: 145px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.example-particle-overlay-dark-modal {
+    @include particle-overlay-dark-modal
+}
+
+.example-particle-overlay-dark-tooltips {
+    @include particle-overlay-dark-tooltips
+}
+
+.example-particle-overlay-light-loader {
+    @include particle-overlay-light-loader
+}

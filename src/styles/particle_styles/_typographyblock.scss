@@ -1,0 +1,71 @@
+.particle-styles-table {
+    
+    width: 100%;
+    max-width: 740px;
+    border: 1px solid $image-border-color;
+    
+    td, th {
+        border-left: 0px solid $image-border-color;
+    }
+    .particle-tag-name-column {
+        width: 150px;
+        padding: 0px 24px;
+        text-transform: uppercase;
+    }
+    .particle-info-column {
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid $footer-content;
+        padding: 12px 24px;
+    }
+    .particle-styles-row-description {
+        color: $component-section-color;
+    }
+    .typography-style-h1 {
+        @include particle-h1;
+    }
+    
+    .typography-style-h2 {
+        @include particle-h2;
+    }
+    
+    .typography-style-h3 {
+        @include particle-h3;
+    }
+    
+    .typography-style-h4 {
+        @include particle-h4;
+    }
+    
+    .typography-style-body {
+        @include particle-body;
+    }
+    
+    .typography-style-hyperlink {
+        @include particle-a;
+    }
+
+    .typography-style-subtitle {
+        @include particle-subtitle;
+    }
+
+    .typography-style-button {
+        @include particle-button-label;
+    }
+
+    .typography-style-navleft {
+        @include particle-navigation-button-default;
+    }
+
+    .typography-style-tab {
+        @include particle-text-grey;
+    }
+
+    .typography-style-label1 {
+        @include particle-text-label;
+    }
+
+    .typography-style-label2 {
+        @include particle-text-hint;
+    }
+}

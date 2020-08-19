@@ -1,0 +1,121 @@
+/* text */
+.example-particle-html {
+    @include particle-html
+}
+.example-particle-body {
+    @include particle-body
+}
+.example-particle-h1 {
+    @include particle-h1
+}
+.example-particle-h2 {
+    @include particle-h2
+}
+.example-particle-h3 {
+    @include particle-h3
+}
+.example-particle-h4 {
+    @include particle-h4
+}
+.example-particle-a {
+    @include particle-a
+}
+.example-particle-a-hover {
+    @include particle-a-hover
+}
+.example-particle-font-fixed-width {
+    @include particle-font-fixed-width
+}
+.example-particle-subtitle {
+    @include particle-subtitle
+}
+.example-particle-button-label {
+    @include particle-button-label
+}
+.example-particle-button-label-white {
+    @include particle-button-label-white
+    background-color: $particle-deep-space-grey;    
+}
+.example-particle-button-label-disabled {
+    @include particle-button-label-disabled
+}
+.example-particle-navigation-button-default {
+    @include particle-navigation-button-default
+}
+.example-particle-navigation-button-selected {
+    @include particle-navigation-button-selected
+}
+.example-particle-navigation-button-default-cloud-grey {
+    @include particle-navigation-button-default-cloud-grey
+}
+.example-particle-section-header {
+    @include particle-section-header
+}
+.example-particle-text-label {
+    @include particle-text-label
+}
+.example-particle-text-selected {
+    @include particle-text-selected
+}
+.example-particle-text-hover {
+    @include particle-text-hover
+}
+.example-particle-text-grey {
+    @include particle-text-grey
+}
+.example-particle-text-disabled {
+    @include particle-text-disabled
+}
+.example-particle-text-placeholder {
+    @include particle-text-placeholder
+}
+.example-particle-text-hint {
+    @include particle-text-hint
+}
+.example-particle-text-validation-error {
+    @include particle-text-validation-error
+}
+.example-particle-text-validation-warning {
+    @include particle-text-validation-warning
+}
+.example-particle-text-validation-success {
+    @include particle-text-validation-success
+}
+.example-particle-body-error {
+    @include particle-body-error
+}
+.example-particle-body-warning {
+    @include particle-body-warning
+}
+.example-particle-body-success {
+    @include particle-body-success
+}
+.example-particle-grid-header {
+    @include particle-grid-header
+}
+.example-particle-body-small {
+    @include particle-body-small
+}
+.example-particle-body-fixed-width {
+    @include particle-body-fixed-width
+}
+.example-particle-body-fixed-width-white {
+    @include particle-body-fixed-width-white
+    background-color: $particle-deep-space-grey;    
+}
+.example-particle-body-small-label {
+    @include particle-body-small-label
+}
+.example-particle-body-white {
+    @include particle-body-white
+    background-color: $particle-deep-space-grey;
+}
+.example-particle-card-title-edit-in-place {
+    @include particle-card-title-edit-in-place  
+}
+.example-particle-card-title {
+    @include particle-card-title    
+}
+.example-particle-card-subtitle {
+    @include particle-card-subtitle
+}

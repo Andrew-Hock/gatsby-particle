@@ -1,0 +1,13 @@
+/* iconography */
+.example-particle-icon-size-small {
+    @include particle-icon-size-small();            
+}
+.example-particle-icon-size-medium {
+    @include particle-icon-size-medium();            
+}
+.example-particle-icon-size-large {
+    @include particle-icon-size-large();            
+}
+.example-particle-icon-toolbar {
+    @include particle-icon-toolbar();            
+}

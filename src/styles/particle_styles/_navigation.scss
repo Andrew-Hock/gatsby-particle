@@ -1,0 +1,307 @@
+$left-nav-margin: 36px;
+
+//Main Left Navigation Container
+.prt-leftnav-container {
+	padding-top: 20px;
+	transition: 0.3s linear;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 315px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin-left: 0px;
+	z-index: 700;
+	-moz-box-shadow: 0;
+	-webkit-box-shadow: 0;
+	box-shadow: 0;
+
+	#leftnav {
+		overflow-y: auto;
+		height: 100%;
+		margin-bottom: 100px;
+		padding-left: 0px;
+		font-size: 14px;
+		-webkit-overflow-scrolling: touch;
+		overflow-x: hidden;
+		transition: linear 0.3s;
+
+
+		#xs-topnav {
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			left: 0px;
+			top: 56px;
+			border-bottom: 1px solid #19192a;
+			position: relative;
+			visibility: hidden;
+			background-color: white;
+
+			.nav-item,
+			.prt-header-nav a {
+				align-items: center;
+				color: $normal-text-color;
+				display: flex;
+				font-weight: 400;
+				font-size: 14px;
+				height: 55px;
+				justify-content: center;
+				letter-spacing: 1.1px;
+				width: 105px;
+				text-decoration: none !important;
+
+				&:hover {
+					color: black;
+					font-weight: 500;
+				}
+			}
+
+			.nav-item-active {
+				align-items: center;
+				background-color: $particle-lilac-violet;
+				color: $particle-dark-violet;
+				display: flex;
+				font-weight: 500;
+				font-size: 14px;
+				height: 59px;
+				justify-content: center;
+				letter-spacing: 1.1px;
+				width: 105px;
+				text-decoration: none !important;
+
+				&:hover {
+					cursor: default;
+				}
+			}
+		}
+
+		#leftnav-menu {
+			margin-left: 8px;
+			margin-right: 0px;
+
+			ul {
+				padding-left: 0;
+			}
+
+			li {
+				list-style: none !important;
+				text-decoration: none !important;
+				margin: 0;
+				padding: 0;
+			}
+
+			#accordion {
+				margin-left: 0px;
+
+				li {
+					overflow: hidden; // keep this in!!
+					padding: 1px 0;
+				}
+			}
+
+			#leftnav-menu.prt-menu-section {
+				margin-left: 0px;
+				padding-left: 0px;
+				background-color: white;
+				width: 100%;
+				height: 100%;
+				z-index: 600;
+
+				&:hover {
+					cursor: s-resize;
+				}
+			}
+
+			a {
+				text-decoration: none !important;
+				color: $gray-text;
+				font-weight: normal;
+				padding-left: 0;
+				margin-left: 0;
+
+				&:hover {
+					color: $link-color;
+				}
+			}
+
+			// base class for all li menu items that are within the leftnav ol
+			// defines common padding and margin for all items
+			//.prt-leftnav-item {
+			//	margin: 1rem 0;
+			//}
+
+			/***.prt-menu-section-active,
+	.prt-menu-section.active {
+		color: black;
+		font-weight: 500;
+		margin-left: 0;
+	}***/
+
+			//Left Navigation Headers
+			.prt-menu-header {
+				color: #585E67;
+				font-weight: 500;
+				padding-left: $leftnav-padding-multiplier;
+
+				&:hover,
+				&:active {
+					color: black;
+				}
+			}
+
+			.prt-menu-header-active {
+				color: black;
+				font-weight: 500;
+				margin-left: 0px;
+				padding-left: 24px;
+			}
+
+			.prt-brand-header {
+				border-left: solid 2px transparent;
+				display: block;
+				font-weight: 200;
+				padding-left: 24px;
+			}
+
+			.prt-brand-header-active {
+				border-left: solid 2px $link-color;
+				color: $link-color;
+				display: block;
+				font-weight: 500;
+				padding-left: 24px;
+			}
+
+			//First Level Navigation for Brand and About
+			.prt-brand-menu {
+				border-left: solid 2px transparent;
+				color: $particle-anthracite-grey;
+				font-weight: 400;
+				padding-left: 24px;
+				height: 35px;
+				display: block;
+				margin-left: 8px;
+			}
+
+			.prt-brand-menu-active {
+				color: $link-color;
+				border-left: solid 2px $link-color;
+				font-weight: 500;
+				margin-left: 0px;
+				padding-left: 24px;
+
+				& > a {
+					color: $link-color;
+					font-weight: 500;
+				}
+			}
+
+			//Sub-menu Items Container
+			.prt-menu-items {
+				list-style: none !important;
+				margin-left: 0px;
+				padding: 0;
+				transition: 0.2s linear all;
+				
+				//Hides Component Section Titles
+				li div.prt-component-section {
+					display: none;
+				}
+			}
+
+			//Individual Link Containers (for the height of the active state bar)
+			.prt-menu-link {
+				border-left: solid 2px transparent;
+				display: block;
+				text-decoration: none;
+				padding-left: 36px;
+			}
+
+			// class for adding margin to items at level 1 of menu
+			.prt-menu-margin {
+				margin: 0.5rem 0;
+			}
+
+			.active.prt-menu-link,
+			.active.prt-component-submenu-item {
+				color: $link-color;
+				font-weight: 500;
+				border-left: solid 2px $link-color;
+			}
+
+			#leftnav-header {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.prt-header-link-active {
+				border-left: solid 2px $link-color;
+				display: block;
+				font-weight: 500;
+				margin-bottom: 12px;
+				padding-left: $left-nav-margin;
+
+				& > a {
+					color: $link-color;
+					font-weight: 500;
+				}
+			}
+
+			// Component Labels (non-clickable)
+			.prt-component-section {
+				border-left: solid 2px transparent;
+				color: $component-section-color;
+				font-weight: 500;
+				text-transform: uppercase;
+				font-size: 13px;
+				margin-left: $left-nav-margin;
+
+				&:hover {
+					cursor: default;
+				}
+			}
+
+			// Component Labels (if clickable)
+			/*.prt-component-section-active {
+	color: $particle-anthracite-grey;
+	border-left: solid 2px transparent;
+	font-weight: 500;
+<	margin-left: $left-nav-margin;
+}*/
+
+			//Individual Component Menu Items
+			.prt-component-submenu-item {
+				padding-left: $left-nav-margin;
+				border-left: solid 2px transparent;
+				color: $gray-text;
+				display: block;
+			}
+
+			.prt-component-submenu-item-active > a {
+				color: $link-color;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+//click-to-close overlays for slideout navigation
+#overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(25, 25, 42, 0.6); //#19192a at 60%
+	z-index: 650;
+	cursor: w-resize;
+	display: none;
+}
+
+

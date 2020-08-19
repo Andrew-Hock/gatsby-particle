@@ -1,0 +1,624 @@
+.example-particle-ripple {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+    };
+    .ripple-ink {
+        display: block;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+        transform: scale(0);
+    }
+    
+    .ripple-animate {
+        animation: ripple $particle-duration-lazy $particle-easing-standard;
+    }
+    
+    @keyframes ripple {
+        100% {opacity: 0; transform: scale(2.5);}
+    }
+}
+
+.example-particle-ripple-busy {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+    };
+    .ink {
+        display: block;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+        transform: scale(0);
+        width: 100%;
+        height: 100%;
+    }
+    .animate1 {
+        animation: ripple $particle-duration-slow $particle-easing-standard;
+        animation-iteration-count: infinite;
+    }
+    .animate2 {
+        animation: ripple $particle-duration-slow $particle-easing-standard;
+        animation-iteration-count: infinite;
+        animation-delay: $particle-duration-lazy;
+    }
+    @keyframes ripple {
+        100% {opacity: 0; transform: scale(2.5);}
+    }
+}
+
+.example-particle-colorchange {
+     .square {
+         position: relative;
+         border: 1px solid $particle-matter-grey;
+         border-radius: 3px;
+         background: $particle-electric-indigo;
+         height: 200px;
+         width: 200px;
+         margin: 0 auto;
+         overflow: hidden;
+         cursor: pointer;
+         transition: background $particle-easing-standard $particle-duration-fast;
+         
+         &:hover {
+             background: $particle-dark-violet;
+         }    
+     }
+}
+
+.example-particle-fadein {
+    background: $particle-matter-grey;
+    
+     .square {
+         position: relative;
+         border: 1px solid $particle-matter-grey;
+         border-radius: 3px;
+         background: $particle-white;
+         height: 200px;
+         width: 200px;
+         margin: 0 auto;
+         cursor: pointer;
+         overflow: hidden;
+     }
+     .squareFadeIn {
+         @include particle-fade('in');
+     }
+     
+     .squareFadeOut {
+         @include particle-fade('out');
+     }
+}
+
+.example-particle-slidein {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+      
+        .squarepanel {
+            margin-top: 1em;
+            width: 40%;
+            height: 70%;
+            position: absolute;
+            right: 0%;
+            background: $particle-siberian-grey;
+        }
+        
+        .squarelink {
+            position: absolute;
+            left: 40%;
+            bottom: 5%;
+            cursor: pointer;
+            color: $particle-deep-sky-blue;
+            text-align: center;
+        }
+        .squareSlideIn {
+            transform: translateX(0%);
+            transition: all $particle-easing-decelerate $particle-duration-medium;
+        }
+        
+        .squareSlideOut {
+            transform: translateX(100%);
+            transition: all $particle-easing-accelerate $particle-duration-medium;
+        }        
+    }    
+}
+
+.example-particle-translatefast {
+    
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        .container {
+            width: 40px;
+            height: 20px;
+            border-radius: 10px;
+            background: #C6E1FA;
+            cursor: pointer;
+        }
+        
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+                right: 0%;
+                background: $particle-deep-sky-blue;
+                box-shadow: rgba(0,0,0,0.3) 0px 1px 2px 0px;
+        }
+    }
+    
+    .translateRight {
+        transform: translateX(20px);
+        transition: all $particle-easing-linear $particle-duration-fast;
+    }
+    
+    .translateLeft {
+            transform: translateX(0px);
+            transition: all $particle-easing-linear $particle-duration-fast;        
+    }
+}
+
+$loader_duration: 1.2s;
+.example-particle-spinner {
+    
+   .square {
+       position: relative;
+       border: 1px solid $particle-matter-grey;
+       border-radius: 3px;
+       background: $particle-white;
+       height: 200px;
+       width: 200px;
+       margin: 0 auto;
+       overflow: hidden;
+       text-align: center;
+      
+       .ring {
+           height: 70px;
+           width: 70px;
+           position: relative;
+           left: calc(50% - 35px);
+           top: calc(50% - 35px);
+           
+           div {
+               box-sizing: border-box;
+               display: block;
+               position: absolute;
+               width: 70px;
+               height: 70px;
+               border: 10px solid #4E3EB1;
+               border-radius: 50%;
+               animation: loader-ring $loader-duration $particle-easing-standard infinite;
+               border-color: #4E3EB1 transparent transparent transparent;
+               
+               &:nth-child(1) {
+                   animation-delay: -0.3s;
+               }
+               
+               &:nth-child(2) {
+                   animation-delay: -0.2s;
+               }
+               
+               &:nth-child(3) {
+                   animation-delay: -0.1s;
+               }
+           }
+       }
+   }
+   @keyframes loader-ring {
+       0% {
+           transform: rotate(0deg);
+       }
+       100% {
+           transform: rotate(360deg);
+       }
+   }
+   
+   @keyframes loader-pacman {
+       0% {transform: rotateZ(0deg);}
+       100% {transform: rotateZ(360deg);}
+   }
+   
+   @keyframes loader-outer {
+       0% {transform: rotateZ(-24deg);}
+       100% {transform: rotateZ(336deg);}
+   }
+   
+   @keyframes loader-inner {
+       0%,15% {
+           opacity: 0;
+       }
+       16% {
+           opacity: 1;
+           transform: rotateZ(90deg);
+       }
+       40% {
+           transform: rotateZ(180deg);
+       }
+       60% {
+           transform: rotateZ(270deg);
+       }
+       80%, 100% {
+           opacity: 0;
+       }
+   }
+   
+   @keyframes loader-outer-original {
+       0%, 15% {
+           opacity: 1;
+           animation-timing-function: step-end;
+       }
+       16%, 79% {
+           opacity: 0;
+           animation-timing-function: step-end;
+       }
+       80%, 100% {
+           opacity: 1;
+           animation-timing-function: step-end;
+       }
+   }   
+}
+
+.example-particle-progressdeterminate {
+    .square {
+       position: relative;
+       border: 1px solid $particle-matter-grey;
+       border-radius: 3px;
+       background: $particle-white;
+       height: 200px;
+       width: 200px;
+       margin: 0 auto;
+       overflow: hidden;
+       
+       .container {
+           width: 80%;
+           height: 6px;
+           margin: 6em auto 0 auto;
+           background: $particle-cloud-grey;
+           border-radius: 3px;
+           overflow: hidden;
+       }
+       .loaded {
+           width: 30%;
+           height: 100%;
+           background: $particle-electric-indigo;
+           background: linear-gradient(to right, $particle-periwinkle, $particle-electric-indigo, $particle-periwinkle);
+           background-size: 200% 200%;
+           transition: width $particle-duration-slow $particle-easing-decelerate;
+       }
+       .start {
+           cursor: pointer;
+           color: $particle-deep-sky-blue;
+           margin-top: 1em;
+           text-align: center;
+       }    
+    }
+    .animate {
+        animation: gradient 2s $particle-easing-linear infinite;
+        animation-fill-mode: forwards;
+        animation-direction: reverse;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%
+        }
+        100% {
+            background-position: 200% 0%
+        }
+    }    
+}
+
+.example-particle-progressindeterminate {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        
+        .container {
+            width: 60%;
+            height: 6px;
+            margin: 3em auto 0 auto;
+            background: $particle-cloud-grey;
+                border-radius: 3px;
+                overflow: hidden;
+        }
+        .loaded {
+            width: 40%;
+            height: 100%;
+            background: $particle-periwinkle;
+        }
+        
+        .container_small {
+            width: 60%;
+            height: 2px;
+            margin: 4em auto 0 auto;
+            background: $particle-white;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .loaded {
+            width: 40%;
+            height: 100%;
+            background: $particle-periwinkle;
+        }
+    }
+    .animate {
+        animation: bar 1s $particle-easing-standard infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes bar {
+        0% {margin-left: -25%;}
+        50%  {margin-left: 25%; width: 60%}
+        100%  {margin-left: 75%;}
+    }    
+}
+
+.example-particle-draggable {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        
+        .draggable {
+            width: 80%;
+            height: 50px;
+            margin: 4em auto 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $particle-siberian-grey;
+            border-radius: 3px;
+            transition: all $particle-easing-linear $particle-duration-medium;
+            background: $particle-white;
+        }
+    }
+}
+
+.example-particle-baractive {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+        
+        .bar {
+            position: relative;
+            top: 50%;
+            left: 10%;
+            width: 80%;
+            height: 1px;
+            background: $particle-matter-grey;
+            
+            &__active {
+                background: $particle-deep-sky-blue;
+                height: 2px;
+                transform: scale(0);
+            }
+        }
+        
+        .show {
+            animation: show-bar $particle-duration-medium $particle-easing-standard;
+            animation-fill-mode: forwards;
+        }
+        
+        .hide {
+            animation: hide-bar $particle-duration-medium $particle-easing-standard;
+        }
+        
+        @keyframes show-bar {
+            100% {transform: scale(1);}
+        }
+        
+        @keyframes hide-bar {
+            0% {transform: scale(1);}
+            100% {transform: scale(0);}
+        }        
+    }
+}
+
+.example-particle-bartranslation {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid $particle-matter-grey;
+            position: relative;
+            
+            .tab {
+                padding: 8px 12px;
+                cursor: pointer;
+                color: $particle-anthracite-grey;
+                font-size: 13px;
+                
+                &:not(.active) {
+                    &:hover {
+                        color: $particle-deep-sky-blue;
+                    }
+                }
+            }
+            
+            .active {
+                font-weight: bold;
+                color: $particle-electric-indigo;
+            }
+            
+            .bar {
+                background: $particle-electric-indigo;
+                height: 3px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-radius: 3px;
+                overflow: hidden;
+                transition: left $particle-duration-medium $particle-easing-standard;
+            }
+        }
+    }
+
+}
+
+.example-particle-shimmer {
+      .square {
+          position: relative;
+          border: 1px solid $particle-matter-grey;
+          border-radius: 3px;
+          background: $particle-white;
+          height: 200px;
+          width: 200px;
+          margin: 0 auto;
+          overflow: hidden;
+          
+          .shimmer {
+              width: 80%;
+              height: 30px;
+              margin: 5em auto 0 auto;
+              background: linear-gradient(to right, $particle-cloud-grey, $particle-siberian-grey, $particle-cloud-grey);
+              background-size: 200% 200%;
+              transition: width $particle-duration-slow $particle-easing-decelerate;
+          }
+
+          .animate {
+              animation: shimmer 2s $particle-easing-linear infinite;
+              animation-fill-mode: forwards;
+              animation-direction: reverse;
+          }
+          
+          @keyframes shimmer {
+              0% {
+                  background-position: 0% 0%
+              }
+              100% {
+                  background-position: 200% 0%
+              }
+          }
+      }
+}
+
+.example-particle-rotate {
+    .square {
+        position: relative;
+        border: 1px solid $particle-matter-grey;
+        border-radius: 3px;
+        background: $particle-white;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rotate-cw {
+        @include particle-rotate('cw', 90);
+    }
+    
+    .rotate-acw {
+        @include particle-rotate('ccw', 0);
+    }    
+}
+
+.example-particle-disclose {
+    .square {
+       position: relative;
+       border: 1px solid $particle-matter-grey;
+       border-radius: 3px;
+       background: $particle-white;
+       height: 200px;
+       width: 200px;
+       margin: 0 auto;
+       overflow: hidden;
+       padding: 24px 12px;
+
+       .radio {
+           display: flex;
+           flex-flow: row nowrap;
+           cursor: pointer;
+           
+           &:last-child {
+               margin-top: 12px;
+           }
+           
+           input {
+               margin-right: 8px;
+           }
+       }
+       
+       .disclosure {
+           font-size: 13px;
+           margin-top: 8px;
+           margin-left: 24px;
+           max-height: 0px;
+           overflow: hidden;
+       }
+    }
+    .disclose-in {
+        @include particle-disclose('in');
+        max-height: 100% !important;
+    }
+    
+    .disclose-out {
+        @include particle-disclose('out');
+        max-height: 0px !important;        
+    }
+}

@@ -1,0 +1,17 @@
+.example-particle-shadow {
+    width: 96px;
+    height: 96px;
+    background-color: $particle-ice-blue;
+}
+
+.example-particle-shadow-default {
+    @include particle-shadow-default
+}
+
+.example-particle-shadow-light {
+    @include particle-shadow-light;
+}
+
+.example-particle-shadow-elevated {
+    @include particle-shadow-elevated;
+}
