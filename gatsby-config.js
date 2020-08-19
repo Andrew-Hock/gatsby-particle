@@ -6,17 +6,24 @@ module.exports = {
   },
   pathPrefix: `/gtc`,
   plugins: [
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'AppDynamics Design System',
-        short_name: 'Particle',
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#0062ff',
-        display: 'browser',
+       {
+         resolve: 'gatsby-source-filesystem',
+         options: {
+           path: `${__dirname}/content`,
+           name: 'content',
+          },
+        },
+        {
+        resolve: 'gatsby-plugin-manifest',
+        options: {
+          name: 'AppDynamics Design System',
+          short_name: 'Particle',
+          start_url: '/',
+          background_color: '#ffffff',
+          theme_color: '#0062ff',
+          display: 'browser'
+        },
       },
-    },
     {
       resolve: 'gatsby-theme-carbon',
       options: {
