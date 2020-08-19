@@ -1,4 +1,4 @@
-# Gatsby Theme Carbon Starter
+# Gatsby Particle
 
 ## What is this?
 
