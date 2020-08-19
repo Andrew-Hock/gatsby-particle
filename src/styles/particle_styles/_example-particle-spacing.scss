@@ -1,0 +1,41 @@
+$SPACING_EXAMPLE_WIDTH: 120px;
+.spacing-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spacing-color-block {
+    width: $SPACING_EXAMPLE_WIDTH;
+    height: 24px;
+	border: 0px !important;
+    background-color: #DDDDDD;
+}
+%spacing-base {
+    width: $SPACING_EXAMPLE_WIDTH;
+    background-color: $particle-torch-red-light;    
+}
+.example-particle-spacing-1x {
+    @extend %spacing-base;
+    height: $particle-spacing-1x;
+}
+.example-particle-spacing-2x {
+    @extend %spacing-base;
+    height: $particle-spacing-2x;
+}
+.example-particle-spacing-3x {
+    @extend %spacing-base;
+    height: $particle-spacing-3x;
+}
+.example-particle-spacing-4x {
+    @extend %spacing-base;
+    height: $particle-spacing-4x;
+}
+.example-particle-spacing-5x {
+    @extend %spacing-base;
+    height: $particle-spacing-5x;
+}
+.example-particle-spacing-6x {
+    @extend %spacing-base;
+    height: $particle-spacing-6x;
+}

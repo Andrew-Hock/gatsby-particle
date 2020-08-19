@@ -1,0 +1,27 @@
+$RADIUS_EXAMPLE_HEIGHT: 48px;
+
+%radius-base {
+    width: $RADIUS_EXAMPLE_HEIGHT * 4;
+    height: $RADIUS_EXAMPLE_HEIGHT;
+    background-color: #DDDDDD;
+}
+
+.example-particle-radius-default {
+    @extend %radius-base;
+    border-radius: $particle-radius-default;
+}
+
+.example-particle-radius-heavy {
+    @extend %radius-base;
+    border-radius: $particle-radius-heavy;
+}
+
+.example-particle-radius-full {
+    @extend %radius-base;    
+    border-radius: $particle-radius-full;    
+}
+
+.example-particle-radius-half {
+    @extend %radius-base;    
+    @include particle-radius-half($RADIUS_EXAMPLE_HEIGHT);
+}

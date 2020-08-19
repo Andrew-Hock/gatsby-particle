@@ -1,1 +1,12 @@
-// This is where your application styles could go.
+$image_base: '../images';
+$font_base: '../styles/fonts';
+@import "particle_styles/fonts";
+@import "particle_styles/mixins";
+@import "particle_styles/variables";
+@import "particle_styles/root";
+@import "particle_styles/header";
+@import "particle_styles/footer";
+@import "particle_styles/buttons";
+@import "particle_styles/anchors";
+/* Styles for all the blocks */
+@import "particle_styles/component";

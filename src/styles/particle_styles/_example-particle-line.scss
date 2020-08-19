@@ -1,0 +1,17 @@
+/* line */
+.example-particle-line-default {
+    @extend %line-base;
+    border-bottom: $particle-line-default solid $particle-ultra-violet;
+}
+.example-particle-line-medium {
+    @extend %line-base;
+    border-bottom: $particle-line-medium solid  $particle-ultra-violet;
+}
+.example-particle-line-thick {
+    @extend %line-base;
+    border-bottom: $particle-line-thick solid  $particle-ultra-violet;
+}
+.example-particle-line-fat {
+    @extend %line-base;
+    border-bottom: $particle-line-fat solid  $particle-ultra-violet;
+}
