@@ -16,7 +16,7 @@ module.exports = {
         short_name: 'Gatsby Theme Carbon',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#0062ff',
+        theme_color: '#9D8EF',
         display: 'browser',
       },
     },
@@ -25,10 +25,7 @@ module.exports = {
           options: {
         iconPath: './src/images/icon-512x512.png'
       },
-        repository: {
-          baseUrl:
-            'http://localhost',        
-          },
     },
   ],
 };
+
