@@ -4,45 +4,39 @@
 - title: Style
   pages:
     - title: Colors
-      path: /guides/configuration
+      path: /style/colors
     - title: Typography
-      path: /guides/MDX
+      path: /style/typography
     - title: Depth
       path: /guides/shadowing
     - title: Styling
       path: /guides/styling
     - title: Navigation
       path: /guides/navigation/sidebar
-    - title: npm scripts
-      path: /guides/npm-scripts
 - title: Patterns & Behaviors
   pages:
-    - title: Colors
-      path: /demo
-    - title: Typography
+    - title: Background Jobs
+      path: /patterns/BackgroundJobs
+    - title: Browser Button Behavior
       path: /guides/MDX
-    - title: Depth
+    - title: Carousel
       path: /guides/shadowing
-    - title: Styling
+    - title: Data Formats
       path: /guides/styling
-    - title: Navigation
+    - title: Forms
       path: /guides/navigation/sidebar
-    - title: npm scripts
+    - title: Help Panel
       path: /guides/npm-scripts
 - title: Layout
   pages:
-    - title: Colors
-      path: /guides/configuration
-    - title: Typography
-      path: /guides/MDX
-    - title: Depth
-      path: /guides/shadowing
-    - title: Styling
-      path: /guides/styling
-    - title: Navigation
-      path: /guides/navigation/sidebar
-    - title: npm scripts
-      path: /guides/npm-scripts
+    - title: Grid System
+      path: /layout/GridSystem
+    - title: Spacing Rules
+      path: /layout/SpacingRules
+    - title: Layout Collection
+      path: /layout/Collection
+    - title: Layout Structure
+      path: /layout/Structure
 - title: Components
   pages:
     - title: Accordion
