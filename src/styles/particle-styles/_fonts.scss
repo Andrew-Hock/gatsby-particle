@@ -2,58 +2,53 @@
     font-family: 'AppDSans';
     font-style: normal;
     font-weight: 100;
-    src: local('AppDSans-Thin'),
-    url('/src/styles/particle-styles/fonts/AppDSans-Thin.woff2') format('woff2');
+    src: url('/src/styles/particle-styles/fonts/AppDSans-Thin.woff2') format('woff2'), local('AppDSans-Thin');
 }
 
 @font-face {
     font-family: 'AppDSans';
     font-style: normal;
     font-weight: 200;
-    src: local('AppDSans-Light'),
-    url('/src/styles/particle-styles/fonts/AppDSans-Light.woff2') format('woff2');
+    src: url('/src/styles/particle-styles/fonts/AppDSans-Light.woff2') format('woff2'), local('AppDSans-Light');
 }
 
 @font-face {
     font-family: 'AppDSans';
     font-style: normal;
     font-weight: 400;
-    src: local('AppDSans-Regular'),
-    url('/src/styles/particle-styles/fonts/AppDSans-Regular.woff2') format('woff2');
+    src: url('/src/styles/particle-styles/fonts/AppDSans-Regular.woff2') format('woff2'), local('AppDSans-Regular');
 
 }
 @font-face {
     font-family: 'AppDSans';
     font-style: normal;
     font-weight: 500;
-    src: local('AppDSans-Medium'),
-    url('/src/styles/particle-styles/fonts/AppDSans-Medium.woff2') format('woff2');
+    src: url('/src/styles/particle-styles/fonts/AppDSans-Medium.woff2') format('woff2'), local('AppDSans-Medium');
 }
 
 @font-face {
     font-family: 'AppDSans';
     font-style: normal;
     font-weight: 700;
-    src: local('AppDSans-Bold'),
-    url('/src/styles/particle-styles/fonts/AppDSans-Bold.woff2') format('woff2');
+    src: url('/src/styles/particle-styles/fonts/AppDSans-Bold.woff2') format('woff2'), local('AppDSans-Bold');
 }
 
-@mixin particlecraft-font-light() {
+@mixin AppDSans-light() {
 	font-family: "AppDSans" !important;
     font-weight: 100 !important;
 }
 
-@mixin particlecraft-font-regular() {
+@mixin AppDSans-regular() {
     font-family: "AppDSans" !important;
     font-weight: 400 !important;
 }
 
-@mixin particlecraft-font-medium() {
+@mixin AppDSans-medium() {
 	font-family: "AppDSans" !important;
     font-weight: 500 !important;
 }
 
-@mixin particlecraft-font-bold() {
+@mixin AppDSans-bold() {
 	font-family: "AppDSans" !important;
     font-weight: 700 !important;
 }

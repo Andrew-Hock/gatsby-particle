@@ -12,27 +12,27 @@
 }
 
 .link {
-  @include carbon--type-style('expressive-heading-03', true);
-  position: relative;
+  position: fixed;
   display: inline-block;
+  right: $spacing-06;
   transition: color $particle-dark-violet;
-  color: $carbon--gray-100;
+  color: $gray-text;
   text-decoration: none;
-  margin-bottom: $spacing-03;
-  margin-left: $spacing-06;
+  padding-bottom: $spacing-03;
+  padding-left: $spacing-06;
 
   &:hover {
-    color: $interactive-01;
+    color: $particle-dark-violet;;
 
     &::before {
-      color: $interactive-01;
+      color: $particle-dark-violet;;
     }
   }
 
   &:before {
     content: '\21B3'; //"↳"
-    position: absolute;
-    left: -$spacing-06;
+    position: fixed;
+    right: $spacing-06;
     color: $particle-dark-violet;
     transition: color $particle-dark-violet;
     cursor: pointer;
@@ -52,11 +52,11 @@
 }
 
 // dark background
-:global(.container--dark) .link {
-  color: $carbon--white-0;
+.container--dark .link {
+  color: $particle-matter-grey;
 
   &:before {
-    color: $carbon--white-0;
+    color: $particle-matter-grey;
   }
 
   &:hover {

@@ -1,26 +1,36 @@
-@import 'overrides';
+@import 'particle-styles/fonts';
 @import 'particle-styles/colors';
+@import 'overrides';
 @import 'particle-styles/global';
 @import 'particle-styles/leftNav';
-@import 'particle-styles/fonts';
 @import 'particle-styles/anchorlinks';
 
  $prefix: 'prt';
- 
+#gatsby-focus-wrapper {
+   font-family: 'AppDSans', -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+ }
+
+.container {
+  display: inline !important;
+}
+
 header {
     background-color: #19192a !important;
     height: 61px !important;
-    
+    a {
+          border-top: none !important;
+    }
 a:focus {
-    outline: none;
-    border: none;   
+    outline: none !important;
+    border: none !important;
     text-decoration: none;
     }
 a:hover {
-    outline: none;
-    border: none;    
+    outline: none !important;
+    border: none !important;
     }
-  
+}
 
 //Header Search
 .container {
@@ -93,28 +103,25 @@ a:hover {
 }
 
 .description {
-  @include carbon--type-style('caption-01');
   text-transform: lowercase;
-  color: $carbon--gray-30;
+  color: $particle-matter-grey;
 }
 
 .link {
   padding: 6px $spacing-05;
   cursor: pointer;
-  @include carbon--type-style('heading-01');
-  transition: all $duration--fast-01 motion(standard, productive);
   display: block;
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: $carbon--gray-30;
+  color: $particle-matter-grey;
 
   &:hover {
     background-color: #353535;
-    color: $carbon--gray-10;
+    color: $particle-matter-grey;
     .description {
-      color: $carbon--gray-10;
+      color: $particle-matter-grey;
     }
   }
 }
@@ -142,8 +149,8 @@ a:hover {
   }
   &:focus {
     // shell header button's don't present focus on mobile
-    outline: 2px solid $inverse-01;
-    outline-offset: -2px;
+    outline: none !important;
+    outline-offset: 0px;
   }
 }
 
@@ -171,5 +178,4 @@ a:hover {
   .description {
     color: $carbon--gray-10;
   }
-}
 }
