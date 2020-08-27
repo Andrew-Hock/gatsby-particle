@@ -1,39 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme Carbon',
-    description: 'A Gatsby theme for the carbon design system',
-    keywords: 'gatsby,strapi,particle',
+    title: 'Particle - AppyDynamic\'s Design System',
+    description: 'A Gatsby theme for the particle design system',
+    keywords: 'gatsby,theme,carbon',
+    lang: 'en',
+    isSearchEnabled: true,
+    navigationStyle: '',
   },
   pathPrefix: `/gtc`,
   plugins: [
-       {
-         resolve: 'gatsby-source-filesystem',
-         options: {
-           path: `${__dirname}/content`,
-           name: 'content',
-          },
-        },
-        {
-        resolve: 'gatsby-plugin-manifest',
-        options: {
-          name: 'AppDynamics Design System',
-          short_name: 'Particle',
-          start_url: '/',
-          background_color: '#ffffff',
-          theme_color: '#0062ff',
-          display: 'browser'
-        },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Carbon Design Gatsby Theme',
+        short_name: 'Gatsby Theme Carbon',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#0062ff',
+        display: 'browser',
       },
+    },
     {
       resolve: 'gatsby-theme-carbon',
-      options: {
-        mediumAccount: 'carbondesign',
+          options: {
+        iconPath: './src/images/icon-512x512.png'
+      },
         repository: {
           baseUrl:
-            'https://github.com/carbon-design-system/gatsby-theme-carbon',
-          subDirectory: '/packages/example',
-        },
-      },
+            'http://localhost',        
+          },
     },
   ],
 };

@@ -1,8 +1,8 @@
 {
-  "name": "example",
+  "name": "gatsby-particle",
   "private": true,
-  "version": "1.0.0",
-  "license": "Apache-2.0",
+  "version": "1.26.4",
+  "license": "Apache 2.0",
   "scripts": {
     "dev": "gatsby develop -H 0.0.0.0",
     "dev:clean": "yarn clean && yarn develop",
@@ -12,19 +12,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.0.0",
-    "@mdx-js/react": "^1.0.0",
-    "acorn": "^6.4.1",
-    "gatsby": "^2.6.0",
-    "gatsby-cli": "^2.12.87",
-    "gatsby-plugin-mdx": "^1.2.34",
-    "gatsby-plugin-page-creator": "^2.3.22",
-    "gatsby-theme-carbon": "^1.26.7",
-    "graphql": "^14.0.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-refresh": "^0.8.3",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1"
+    "gatsby": "^2.6.1",
+    "gatsby-theme-carbon": "^1.26.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
