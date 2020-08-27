@@ -1,0 +1,147 @@
+// Product
+$particle-ice-blue: #F6FBFF;
+$particle-rain-blue: #BEDFFF;
+$particle-deep-sky-blue: #006ff0;
+$particle-lilac-violet: #ECE9FF;
+$particle-periwinkle: #9D8EFF;
+$particle-electric-indigo: #7B66FF; // deprecated
+$particle-dark-violet: #5845DB;
+
+$particle-white: #ffffff;
+$particle-stardust-grey: #F8F9FA;
+$particle-cloud-grey: #F1F3F5;
+$particle-storm-grey: #E5E8EA;
+$particle-winter-grey: #DEE1E2;
+$particle-siberian-grey: #DBDFE2;
+$particle-matter-grey: #A2A6AB;
+$particle-anthracite-grey: #585E67;
+$particle-deep-space-grey: #19212B;
+
+$particle-validation-red: #DF0D00;
+$particle-validation-orange: #FF7F32;
+$particle-validation-green: #1DA624;
+
+// Status
+$particle-signal-green: #00D270;
+$particle-signal-green-light: #E6FFF3;
+$particle-azure-light: #0076FF; // deprecated
+$particle-azure-blue: #0076FF;
+$particle-azure-blue-light: #E6F1FF;
+$particle-torch-red: #F0213A;
+$particle-torch-red-light: #FEE9EB;
+$particle-saffron-yellow: #FFD00E;
+$particle-saffron-yellow-light: #FFFAE6;
+$particle-lava-orange: #FF7F32;
+$particle-lava-orange-light: #FFE8DB;
+$particle-ultra-violet: #840FA6;
+$particle-unknown-grey: #585E67;
+
+// Brand
+$particle-dynamic-ultra: #4E3EB1;
+$particle-iris: #241774;
+$particle-slow-dancer: #FDA7E0;
+$particle-lens-flare: #8E00CE;
+$particle-fusion: #FF212F;
+$particle-after-burner: #FF7F32;
+$particle-apollo: #FFD400;
+$particle-aurora: #00D180;
+$particle-code-blue: #47A83F;
+$particle-global-control: #B8BEC4;
+
+$particle-deep-space-1: #19212B;
+$particle-deep-space-2: #535960;
+$particle-deep-space-3: #8C9095;
+$particle-deep-space-4: #C5C7CA;
+
+$particle-atmosphere-1: #E4E7EC;
+$particle-atmosphere-2: #EBEDF1;
+$particle-atmosphere-3: #F1F3F5;
+$particle-atmosphere-4: #F8F9FA;
+
+// Charts
+// https://share.goabstract.com/53ea6917-5629-4b3d-8ac5-95a86a64a2ff
+$particle-chart-1: #5A4DAA;
+$particle-chart-2: #53ABFF;
+$particle-chart-3: #71DEC0;
+$particle-chart-4: #FFBF54;
+$particle-chart-5: #F7729A;
+$particle-chart-6: #907EFF;
+$particle-chart-7: #F8A0FF;
+$particle-chart-8: #00B582;
+$particle-chart-9: #FFE95F;
+$particle-chart-10: #BD8D78;
+$particle-chart-11: #A6A0CE;
+$particle-chart-12: #A9D4FF;
+$particle-chart-13: #B8EEDF;
+$particle-chart-14: #FFDFA9;
+$particle-chart-15: #FBB8CC;
+$particle-chart-16: #DED9FF;
+$particle-chart-17: #FBCFFF;
+$particle-chart-18: #7FDAC0;
+$particle-chart-19: #D2F0B8;
+$particle-chart-20: #DEC6BB;
+$particle-chart-21: #3B3270;
+$particle-chart-22: #458ED4;
+$particle-chart-23: #5DB89F;
+$particle-chart-24: #D49E45;
+$particle-chart-25: #CD5E80;
+$particle-chart-26: #6757D4;
+$particle-chart-27: #CE85D4;
+$particle-chart-28: #00966C;
+$particle-chart-29: #88BA5E;
+$particle-chart-30: #9B7462;
+
+
+// Side nav
+// https://share.goabstract.com/ad78a7bd-5f49-473e-ba89-b1cf11b350f1?sha=85e4ea014eacda4b8735e18958dbff037fc8ce80
+//
+//
+$particle-side-nav-color-default:$particle-anthracite-grey;
+// @todo: Change this to $particle-dark-violet once we change view-main
+$particle-side-nav-color-active: #7a66ff;
+
+
+// Variables
+$brand-accent: #7A66FF;
+$dark-violet: #4E3DAF;
+$link-color: #7A66FF;
+$gray-dark: #152A35;
+$gray-darker: #19212a;
+$gray-text: #585E67;
+
+$normal-text-color: #595d60;
+
+$article-fixed-width: 960px;
+$leftnav-padding-multiplier: 24px;
+$image-border-color:  #D2D2D2;// previous $gray-text;
+$do-green: #00d270;
+$dont-red: #f0213a;
+$infoblock-blue: #41a4f0;
+$anchor-link-gray: #d8d8d8;
+$button-color: #4E3DAF;
+$missing-pink: #FFE8E8;
+$footer-content: #ccd2d7;
+$icon-active: #f4f2ff;
+
+$component-section-color: #a2a6ab;
+
+$particle-icon-color: $particle-deep-space-grey;
+$particle-icon-color-hover: $particle-dark-violet;
+$particle-icon-color-active: $particle-periwinkle;
+
+$xlarge-screen: (min-width: 1480px);
+$large-screen: (min-width: 1280px) and (max-width: 1479px);
+$medium-screen: (min-width: 960px) and (max-width: 1280px);
+$small-screen:(min-width: 640px) and (max-width: 959px);
+$xsmall-screen: (min-width: 465px) and (max-width: 639px);
+$xxsmall-screen: (min-width: 375px) and (max-width: 464px);
+
+$spacer-1x: 10px;
+$spacer-2x: $spacer-1x * 2;
+$spacer-3x: $spacer-1x * 3;
+$spacer-4x: $spacer-1x * 4;
+$spacer-5x: $spacer-1x * 5;
+$spacer-6x: $spacer-1x * 6;
+$spacer-7x: $spacer-1x * 7;
+$spacer-8x: $spacer-1x * 8;
+

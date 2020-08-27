@@ -4,88 +4,86 @@
 - title: Style
   pages:
     - title: Colors
-      path: /style/colors
+      path: /guides/configuration
     - title: Typography
-      path: /style/typography
-    - title: Carousel
-      path: /style/carousel
+      path: /guides/MDX
     - title: Depth
-      path: /style/depth
-    - title: Writing
-      path: /style/writing
-    - title: Design Tokens
-      path: /style/design-tokens
-    - title: Component Assets
-      path: /style/component-assets
+      path: /guides/shadowing
+    - title: Styling
+      path: /guides/styling
+    - title: Navigation
+      path: /guides/navigation/sidebar
+    - title: npm scripts
+      path: /guides/npm-scripts
 - title: Patterns & Behaviors
   pages:
-    - title: Background Jobs
-      path: /patterns/background-jobs
-    - title: Browser Buttons
-      path: /patterns/browser-buttons
-    - title: Carousel
-      path: /patterns/carousel
-    - title: Data Formats
-      path: /patterns/data-formats
-    - title: Filter Pattern
-      path: /patterns/navigation/filter-pattern
-    - title: forms
-      path: /patterns/forms
-    - title: Help Panel
-      path: /patterns/help-panel
-    - title: Master Detail
-      path: /patterns/master-detail
-    - title: Messages
-      path: /patterns/messages
-    - title: Motion
-      path: /patterns/motion
-    - title: Notificiation Center
-      path: /patterns/notification-center
-    - title: On-boarding
-      path: /patterns/on-boarding
-    - title: Repeater Form
-      path: /patterns/repeater-form
-    - title: Wizard
-      path: /patterns/wizard
+    - title: Colors
+      path: /demo
+    - title: Typography
+      path: /guides/MDX
+    - title: Depth
+      path: /guides/shadowing
+    - title: Styling
+      path: /guides/styling
+    - title: Navigation
+      path: /guides/navigation/sidebar
+    - title: npm scripts
+      path: /guides/npm-scripts
 - title: Layout
   pages:
-    - title: Grid
-      path: /layout/grid
-    - title: Spacing
-      path: /layout/spacing
-    - title: Collection
-      path: /layout/collection
-    - title: Structure
-      path: /layout/structure
+    - title: Colors
+      path: /guides/configuration
+    - title: Typography
+      path: /guides/MDX
+    - title: Depth
+      path: /guides/shadowing
+    - title: Styling
+      path: /guides/styling
+    - title: Navigation
+      path: /guides/navigation/sidebar
+    - title: npm scripts
+      path: /guides/npm-scripts
 - title: Components
   pages:
     - title: Accordion
       path: /components/Accordion
-    - title: Anchor Links
+    - title: AnchorLinks
       path: /components/AnchorLinks
-    - title: Article Card
+    - title: ArtDirection
+      path: /components/ArtDirection
+    - title: ArticleCard
       path: /components/ArticleCard
+    - title: Aside
+      path: /components/Aside
+    - title: Caption
+      path: /components/Caption
     - title: Code blocks
       path: /components/code-blocks
-    - title: Do Dont Example
+    - title: DoDontExample
       path: /components/DoDontExample
-    - title: Do Dont Row
+    - title: DoDontRow
       path: /components/DoDontRow
-    - title: Feature Card
+    - title: FeatureCard
       path: /components/FeatureCard
-    - title: Feedback Dialog
+    - title: FeedbackDialog
       path: /components/FeedbackDialog
+    - title: GifPlayer
+      path: /components/GifPlayer
     - title: Grid
       path: /components/Grid
-    - title: Image Card
+    - title: ImageCard
       path: /components/ImageCard
-    - title: Image Gallery
+    - title: ImageGallery
       path: /components/ImageGallery
-    - title: Notifications
+    - title: InlineNotification
       path: /components/InlineNotification
     - title: Markdown
       path: /components/markdown
-    - title: Page Description
+    - title: MediumPosts
+      path: /components/MediumPosts
+    - title: MiniCard
+      path: /components/MiniCard
+    - title: PageDescription
       path: /components/PageDescription
     - title: ResourceCard
       path: /components/ResourceCard
@@ -93,3 +91,5 @@
       path: /components/Tabs
     - title: Title
       path: /components/Title
+    - title: Video
+      path: /components/Video

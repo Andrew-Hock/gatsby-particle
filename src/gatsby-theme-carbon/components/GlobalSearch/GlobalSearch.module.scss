@@ -1,28 +1,5 @@
-@import 'overrides';
-@import 'particle-styles/colors';
-@import 'particle-styles/global';
-@import 'particle-styles/leftNav';
-@import 'particle-styles/fonts';
-@import 'particle-styles/anchorlinks';
+@import '~carbon-components/scss/globals/scss/helper-mixins';
 
- $prefix: 'prt';
- 
-header {
-    background-color: #19192a !important;
-    height: 61px !important;
-    
-a:focus {
-    outline: none;
-    border: none;   
-    text-decoration: none;
-    }
-a:hover {
-    outline: none;
-    border: none;    
-    }
-  
-
-//Header Search
 .container {
   position: relative;
   display: flex;
@@ -30,32 +7,36 @@ a:hover {
   width: 100%;
   margin-left: $spacing-03;
   height: 3rem;
-  color: white;
-  transition: max-width 5%$carbon--standard-easing;
-  background: $duration--fast-02 $carbon--standard-easing;
+  background-color: #19192a;
+  color: #A2A6AB;
+  transition: max-width $duration--fast-02 $carbon--standard-easing,
+    background $duration--fast-02 $carbon--standard-easing;
+}
 
-.inputFocusWithin {
+.container.inputFocusWithin {
   outline: none;
+  outline-offset: 0px;
 }
 
-.hidden {
+.container.hidden {
   max-width: 3rem;
+  background-color: #19192a;
 }
 
- svg {
+.container svg {
   fill: $inverse-01;
-}
 }
 
 .inputWrapper {
   display: flex;
   flex-grow: 1;
-  border-bottom: 1px solid $inverse-02;
+  border-bottom: none;;
 }
 
 .input {
-  color: white;
-  caret-color: white;
+  @include carbon--type-style('body-short-02');
+  color: $inverse-01;
+  caret-color: $inverse-01;
   background-color: transparent;
   border: none;
   outline: none;
@@ -70,6 +51,10 @@ a:hover {
   pointer-events: none;
 }
 
+.label {
+  @include hidden;
+}
+
 .list {
   position: absolute;
   z-index: 10000; /* old z('floating') #940 */
@@ -77,8 +62,8 @@ a:hover {
   left: 0;
   right: 0;
   top: 3rem;
-  background-color: $ui-05;
-  border: 1px solid $inverse-02;
+  background-color: #19192a;
+  border: none;
   border-top: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
@@ -171,5 +156,4 @@ a:hover {
   .description {
     color: $carbon--gray-10;
   }
-}
 }
